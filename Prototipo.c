@@ -1,23 +1,23 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define MAX 120
 #define TENTATIVAS 6
 
 typedef struct _JOGADOR{
-    char[42] nome;
+    char nome[42];
     int pontos;
     int usavel;
-    
 } JOGADOR;
 
 typedef struct _PERFIL{
-    char pergunta1[];
-    char pergunta2[];
-    char pergunta3[];
-    char pergunta4[];
-    char pergunta5[];
-    char resposta;
-    int jaUsado = 0;
-    int pontuacao = 6
+    char pergunta1[80];
+    char pergunta2[80];
+    char pergunta3[80];
+    char pergunta4[80];
+    char pergunta5[80];
+    char resposta[20];
+    int jaUsado = 0; /*tá indicando erro, verificar o que é. acredito que não dá pra definir a variável dentro da struct*/
+    int pontuacao = 6; /*esse também tá dando erro*/
 } PERFIL;
 
 /*
@@ -29,7 +29,11 @@ cada ponto é equivalente ao numero de casas andadas.
 
 int main(){
 
-    int jogadores, i, JOGADOR players[6], tamanhoMaxPerfil;
+    int jogadores, i, tamanhoMaxPerfil;
+    JOGADOR players[6];
+    PERFIL perfil[20];
+    char resposta[20];
+
     printf("Insira a quantidade de jogadores (2-6)\n");
     scanf("%d", &jogadores);
 
@@ -37,7 +41,7 @@ int main(){
         players[i].usavel=1;
     }
 
-
+    
 
 
 }
