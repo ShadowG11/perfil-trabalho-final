@@ -1,23 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <random.h>
 #define MAX 120
+#define MAXPLAYERS 6
+#define MAXPERFIS 169 //sujeito a mudança, numero aleatorio
 #define TENTATIVAS 6
 
 typedef struct _JOGADOR{
-    char nome[42];
+    char[42] nome;
     int pontos;
     int usavel;
+    
 } JOGADOR;
 
 typedef struct _PERFIL{
-    char pergunta1[80];
-    char pergunta2[80];
-    char pergunta3[80];
-    char pergunta4[80];
-    char pergunta5[80];
-    char resposta[20];
-    int jaUsado = 0; /*tá indicando erro, verificar o que é. acredito que não dá pra definir a variável dentro da struct*/
-    int pontuacao = 6; /*esse também tá dando erro*/
+    char pergunta1[];
+    char pergunta2[];
+    char pergunta3[];
+    char pergunta4[];
+    char pergunta5[];
+    char resposta;
+    int jaUsado = 0;
+    int pontuacao = 6
 } PERFIL;
 
 /*
@@ -29,19 +32,71 @@ cada ponto é equivalente ao numero de casas andadas.
 
 int main(){
 
-    int jogadores, i, tamanhoMaxPerfil;
-    JOGADOR players[6];
-    PERFIL perfil[20];
-    char resposta[20];
+    int i, j = 0, k, tamanhoMaxPerfil, *pergunta;
+    unsigned int jogadores, descontaVezes, vez = 0, cartasUsadas = 0, controle = 1;
+    JOGADOR players[MAXPLAYERS];
+    PERFIL cartas[MAXPERFIS];
+    PERFIL temp;
+    char resposta[50];  //acredito, atuamente, que 50 seja suficiente 
 
-    printf("Insira a quantidade de jogadores (2-6)\n");
-    scanf("%d", &jogadores);
+    //CAPTANDO A QUANTIDADE DE JOGADORES
+    for(i=0;i<1;i++){
+        printf("Insira a quantidade de jogadores (2-6)\n");
+        scanf("%d", &jogadores);
+        if(jogadores<2){
+            printf("Voce não pode jogar com menos de duas pessoas!\n");
+            i=0;
+        }
+        else if(jogadores>6){
+            printf("Opa, pessoas demais!\n");
+            i=0
+        }
+    }
 
+    //ATRIBUINDO A QUANTIDADE DE JOGADORES AO PROGRAMA
     for(i=0;i<jogadores;i++){
         players[i].usavel=1;
     }
 
-    
+    //CRIANDO O SISTEMA DE CADA "ROUND", ATE O FINAL DO JOGO 
+    while(player[j].pontos<MAX){
+
+        //CRIANDO SISTEMA DE PERGUNTAS (eu deveria fazer um maximo de tentativas, ou o jgoador fica respondendo até acertar?)
+        while(controle){
+            //i=random%"numero de perfis";
+            pergunta = &cartas[i].pergunta1
+            puts(*pergunta);
+            gets(resposta);
+            if(resposta=="dica"){
+                if(descontaVezes=5){
+                    printf("voce ja atingiu o maximo de dicas!\n");
+                    break;
+                }
+                else{ 
+                    pergunta++;
+                    descontaVezes++;
+                }
+            }
+            else if(resposta==cartas[i].resposta){
+                printf("Parabens, voce acertou!\n");
+                player[j].pontos = (TENTATIVAS - descontaVezes);
+
+                //corrigindo o vetor de cartas para o perfil "i" sair deste
+
+                cartasUsadas++;
+                for(k=i;k<(MAXPERFIS-cartasUsadas); k++){
+                    temp = cartas[i];
+                    cartas[i]=cartas[i+1];
+                    cartas[i+1]=temp;
+                }
+                controle=0;
+            }
+        }  
+        
+        controle=1;
+        vez++;
+        j= vez % jogadores;
+    }
 
 
 }
