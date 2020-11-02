@@ -16,7 +16,7 @@ Jogo feito em C para o trabalho final de Computação 1.
 * O primeiro jogador a chegar aos {INSERIR PONTUAÇÃO MÁXIMA AQUI}, vence!
 
 
-Criadores:
+## Criadores:
 
 * João Victor
 
