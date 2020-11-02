@@ -19,8 +19,6 @@ typedef struct _PERFIL{
     char pergunta4[];
     char pergunta5[];
     char resposta;
-    int jaUsado = 0;
-    int pontuacao = 6
 } PERFIL;
 
 /*
@@ -31,6 +29,8 @@ cada ponto é equivalente ao numero de casas andadas.
 */
 
 int main(){
+
+    printf("Bem vindo ao jogo PERFIL!");
 
     int i, j = 0, k, tamanhoMaxPerfil, *pergunta;
     unsigned int jogadores, descontaVezes, vez = 0, cartasUsadas = 0, controle = 1;
@@ -55,6 +55,7 @@ int main(){
 
     //ATRIBUINDO A QUANTIDADE DE JOGADORES AO PROGRAMA
     for(i=0;i<jogadores;i++){
+
         players[i].usavel=1;
     }
 
@@ -77,6 +78,7 @@ int main(){
                     descontaVezes++;
                 }
             }
+            //Se ele acertar: printa (acertou), atribui os pontos ao jogador, corrige o vetor de PERFIS, retorna o controle pra 0 para mudar de round, o que mais?
             else if(resposta==cartas[i].resposta){
                 printf("Parabens, voce acertou!\n");
                 player[j].pontos = (TENTATIVAS - descontaVezes);
@@ -92,11 +94,11 @@ int main(){
                 controle=0;
             }
         }  
-        
+
         controle=1;
         vez++;
         j= vez % jogadores;
     }
 
-
+    return 0;
 }
