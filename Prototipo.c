@@ -64,7 +64,7 @@ int main(){
 
         //CRIANDO SISTEMA DE PERGUNTAS (eu deveria fazer um maximo de tentativas, ou o jgoador fica respondendo até acertar?)
         while(controle){
-            //i=random%"numero de perfis";
+            i = randomInteger(0, (MAXPERFIS-cartasUsadas));
             pergunta = &cartas[i].pergunta1
             puts(*pergunta);
             gets(resposta);
