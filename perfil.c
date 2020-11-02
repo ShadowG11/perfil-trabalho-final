@@ -133,4 +133,11 @@ void BancoDePerfis(PERFIL cartas[]) {
     strcpy(cartas[1].pergunta[4],"Dica 5: Pintou a Mona Lisa");
     strcpy(cartas[1].resposta,"leonardo da vinci");
 
+    strcpy(cartas[2].pergunta[0],"");
+    strcpy(cartas[2].pergunta[1],"");
+    strcpy(cartas[2].pergunta[2],"");
+    strcpy(cartas[2].pergunta[3],"");
+    strcpy(cartas[2].pergunta[4],"");
+    strcpy(cartas[2].resposta,"");
+
 }
