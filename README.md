@@ -18,6 +18,6 @@ Jogo feito em C para o trabalho final de Computação 1.
 
 ## Criadores:
 
-* João Victor
+* João Victor Ferreira
 
 * Gerson Fernandes Manso Filho
