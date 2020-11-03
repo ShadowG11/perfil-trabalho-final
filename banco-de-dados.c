@@ -72,7 +72,47 @@ void BancoDePerfis(PERFIL cartas[]) {
     strcpy(cartas[a].resposta,"cristovao colombo");
     
     a++;
-
+    
+    strcpy(cartas[a].pergunta[0],"Dica 1: Matematico florentino");
+    strcpy(cartas[a].pergunta[1],"Dica 2: Nasceu em 1564");
+    strcpy(cartas[a].pergunta[2],"Dica 3: Muito presente na Revolucao Cientifica");
+    strcpy(cartas[a].pergunta[3],"Dica 4: Estudou Mecanica Classica");
+    strcpy(cartas[a].pergunta[4],"Dica 5: Defendia o Heliocentrismo");
+    strcpy(cartas[a].resposta,"galileu galilei");
+    
+    a++;
+    
+        
+    strcpy(cartas[a].pergunta[0],"Dica 1: Profeta do Judaismo, Cristianismo e Islamismo");
+    strcpy(cartas[a].pergunta[1],"Dica 2: Famoso por libertar os Hebreus do Egito");
+    strcpy(cartas[a].pergunta[2],"Dica 3: Presente no livro de Exodo");
+    strcpy(cartas[a].pergunta[3],"Dica 4: Abriu o Mar Vermelho");
+    strcpy(cartas[a].pergunta[4],"Dica 5: Figura que detem a autoria da Tora");
+    strcpy(cartas[a].resposta,"moises");
+    
+    a++;
+    
+        
+    strcpy(cartas[a].pergunta[0],"Dica 1: Biologo britanico");
+    strcpy(cartas[a].pergunta[1],"Dica 2: Nasceu em 1809");
+    strcpy(cartas[a].pergunta[2],"Dica 3: Publicou o livro A Origem das Especies");
+    strcpy(cartas[a].pergunta[3],"Dica 4: Cientista Agnostico");
+    strcpy(cartas[a].pergunta[4],"Dica 5: Criou a Teoria da Evolucao");
+    strcpy(cartas[a].resposta,"charles darwin");
+    
+    a++;
+    
+        
+    strcpy(cartas[a].pergunta[0],"Dica 1: ");
+    strcpy(cartas[a].pergunta[1],"Dica 2: ");
+    strcpy(cartas[a].pergunta[2],"Dica 3: ");
+    strcpy(cartas[a].pergunta[3],"Dica 4: ");
+    strcpy(cartas[a].pergunta[4],"Dica 5: ");
+    strcpy(cartas[a].resposta,"");
+    
+    a++;
+    
+    
 
     /*  Copia e Cola daqui
     
