@@ -28,48 +28,48 @@ void BancoDePerfis(PERFIL cartas[]) {
     
     a++;
 
-    strcpy(cartas[a].pergunta[0],"Dica 1: ");
-    strcpy(cartas[a].pergunta[1],"Dica 2: ");
-    strcpy(cartas[a].pergunta[2],"Dica 3: ");
-    strcpy(cartas[a].pergunta[3],"Dica 4: ");
-    strcpy(cartas[a].pergunta[4],"Dica 5: ");
-    strcpy(cartas[a].resposta,"");
+    strcpy(cartas[a].pergunta[0],"Dica 1: Fisico da Suica");
+    strcpy(cartas[a].pergunta[1],"Dica 2: Nascido em 1879");
+    strcpy(cartas[a].pergunta[2],"Dica 3: Ganhou o Premio Nobel");
+    strcpy(cartas[a].pergunta[3],"Dica 4: Nascido na Alemanha");
+    strcpy(cartas[a].pergunta[4],"Dica 5: Criou a Teoria da Relatividade");
+    strcpy(cartas[a].resposta,"albert einstein");
     
     a++;
 
-    strcpy(cartas[a].pergunta[0],"");
-    strcpy(cartas[a].pergunta[1],"");
-    strcpy(cartas[a].pergunta[2],"");
-    strcpy(cartas[a].pergunta[3],"");
-    strcpy(cartas[a].pergunta[4],"");
-    strcpy(cartas[a].resposta,"");
+    strcpy(cartas[a].pergunta[0],"Dica 1: Fisico da Inglaterra");
+    strcpy(cartas[a].pergunta[1],"Dica 2: Nasceu em 1743");
+    strcpy(cartas[a].pergunta[2],"Dica 3: Autodidata");
+    strcpy(cartas[a].pergunta[3],"Dica 4: Criou a Mecanica Classica");
+    strcpy(cartas[a].pergunta[4],"Dica 5: Uma maca caiu em sua cabeca");
+    strcpy(cartas[a].resposta,"isaac newton");
     
     a++;
 
-    strcpy(cartas[a].pergunta[0],"");
-    strcpy(cartas[a].pergunta[1],"");
-    strcpy(cartas[a].pergunta[2],"");
-    strcpy(cartas[a].pergunta[3],"");
-    strcpy(cartas[a].pergunta[4],"");
-    strcpy(cartas[a].resposta,"");
+    strcpy(cartas[a].pergunta[0],"Dica 1: Presidente dos Estados Unidos");
+    strcpy(cartas[a].pergunta[1],"Dica 2: Nascido em 1961");
+    strcpy(cartas[a].pergunta[2],"Dica 3: Aluno de Harvard Law School");
+    strcpy(cartas[a].pergunta[3],"Dica 4: Ganhou o Nobel da Paz");
+    strcpy(cartas[a].pergunta[4],"Dica 5: Primeiro presidente negro dos EUA");
+    strcpy(cartas[a].resposta,"barack obama");
     
     a+;
 
-    strcpy(cartas[a].pergunta[0],"");
-    strcpy(cartas[a].pergunta[1],"");
-    strcpy(cartas[a].pergunta[2],"");
-    strcpy(cartas[a].pergunta[3],"");
-    strcpy(cartas[a].pergunta[4],"");
-    strcpy(cartas[a].resposta,"");
+    strcpy(cartas[a].pergunta[0],"Dica 1: Profeta do Islamismo");
+    strcpy(cartas[a].pergunta[1],"Dica 2: Nascido em Nazare");
+    strcpy(cartas[a].pergunta[2],"Dica 3: Nasceu em uma mangedoura");
+    strcpy(cartas[a].pergunta[3],"Dica 4: Transformou agua em vinho");
+    strcpy(cartas[a].pergunta[4],"Dica 5: Foi crucificado");
+    strcpy(cartas[a].resposta,"jesus");
     
     a++;
 
-    strcpy(cartas[a].pergunta[0],"");
-    strcpy(cartas[a].pergunta[1],"");
-    strcpy(cartas[a].pergunta[2],"");
-    strcpy(cartas[a].pergunta[3],"");
-    strcpy(cartas[a].pergunta[4],"");
-    strcpy(cartas[a].resposta,"");
+    strcpy(cartas[a].pergunta[0],"Dica 1: Navegador Italiano");
+    strcpy(cartas[a].pergunta[1],"Dica 2: Nascido em 1451");
+    strcpy(cartas[a].pergunta[2],"Dica 3: 'descobriu' a America");
+    strcpy(cartas[a].pergunta[3],"Dica 4: America do Sul tem um pais nomeado em sua homenagem");
+    strcpy(cartas[a].pergunta[4],"Dica 5: Primeiro Europeu a chegar no continente americano");
+    strcpy(cartas[a].resposta,"cristovao colombo");
     
     a++;
 
