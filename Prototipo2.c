@@ -57,7 +57,7 @@ int main(){
     }
 
     //CRIANDO O SISTEMA DE CADA "ROUND", ATE O FINAL DO JOGO 
-    while(player[0].pontos<MAX && player[1].pontos<MAX && player[2].pontos<MAX && player[3].pontos<MAX && player[4].pontos<MAX && player[5].pontos<MAX && ){
+    while(player[j].pontos<MAX){
         printf("Jogador %d, responda:\n", j+1);
         i = rand() % (MAXPERFIS-cartasUsadas); /*ALEATORIZA A CARTA*/
         //CRIANDO SISTEMA DE PERGUNTAS (eu deveria fazer um maximo de tentativas, ou o jogador fica respondendo até acertar?)
@@ -116,6 +116,10 @@ int main(){
         controle=1;
         vez++;
         j = vez % jogadores;
+        
+        if(jogador[j-1].pontos>=MAX){
+            break;
+        }
     }
 
     for(i=0;i<jogadores;i++){
