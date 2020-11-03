@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define MAX 120
+#define MAX 20  //Maximo de pontos, 20 devido ao tamanho do Banco de Dados
 #define MAXPLAYERS 6
-#define MAXPERFIS 2 //sujeito a mudança, numero aleatorio
+#define MAXPERFIS 17 //sujeito a mudança, atualmente existem 17 perfis no DB
 #define TENTATIVAS 6
 
 typedef struct _JOGADOR{
@@ -299,6 +299,7 @@ void BancoDePerfis(PERFIL cartas[]) {
     
 
     printf("%d", a);
+    
     /*  Copia e Cola daqui
     
     strcpy(cartas[a].pergunta[0],"Dica 1: ");
