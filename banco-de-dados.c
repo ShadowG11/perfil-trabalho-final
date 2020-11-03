@@ -103,6 +103,52 @@ void BancoDePerfis(PERFIL cartas[]) {
     a++;
     
         
+    strcpy(cartas[a].pergunta[0],"Dica 1: Sociologo e Economista");
+    strcpy(cartas[a].pergunta[1],"Dica 2: Nasceu na Prussia, em 1818");
+    strcpy(cartas[a].pergunta[2],"Dica 3: Grande critico do Capitalismo");
+    strcpy(cartas[a].pergunta[3],"Dica 4: Atuou na Alemanha");
+    strcpy(cartas[a].pergunta[4],"Dica 5: Criou o Socialismo");
+    strcpy(cartas[a].resposta,"karl marx");
+    
+    a++;
+        
+        
+    strcpy(cartas[a].pergunta[0],"Dica 1: Lider politico e militar frances");
+    strcpy(cartas[a].pergunta[1],"Dica 2: Nasceu em 1769");
+    strcpy(cartas[a].pergunta[2],"Dica 3: Imperador dos Franceses");
+    strcpy(cartas[a].pergunta[3],"Dica 4: Conquistou grande parte da Europa");
+    strcpy(cartas[a].pergunta[4],"Dica 5: Perdeu contra a Russia, no inverno");
+    strcpy(cartas[a].resposta,"napoleao bonaparte");
+    
+    a++;    
+        
+    strcpy(cartas[a].pergunta[0],"Dica 1: Grande inventor mecanico e cientista eletrotecnico");
+    strcpy(cartas[a].pergunta[1],"Dica 2: Nasceu em 1856");
+    strcpy(cartas[a].pergunta[2],"Dica 3: revolucionou o campo do eletromagnetismo");
+    strcpy(cartas[a].pergunta[3],"Dica 4: Criou um tipo de turbina que leva o seu nome");
+    strcpy(cartas[a].pergunta[4],"Dica 5: 'ta in shockkk??'");
+    strcpy(cartas[a].resposta,"nikola tesla");
+    
+    a++;    
+        
+    strcpy(cartas[a].pergunta[0],"Dica 1: Politico Alemao");
+    strcpy(cartas[a].pergunta[1],"Dica 2: nasceu em 1889, na austria");
+    strcpy(cartas[a].pergunta[2],"Dica 3: Queria ser artista");
+    strcpy(cartas[a].pergunta[3],"Dica 4: principal instigador da Segunda Guerra Mundial");
+    strcpy(cartas[a].pergunta[4],"Dica 5: Principal figura do Partido Nazista");
+    strcpy(cartas[a].resposta,"adolf hitler");
+    
+    a++;    
+        
+    strcpy(cartas[a].pergunta[0],"Dica 1: Compositor Alemao");
+    strcpy(cartas[a].pergunta[1],"Dica 2: Fez a transicao do classicismo para o romantismo");
+    strcpy(cartas[a].pergunta[2],"Dica 3: Um dos mais importantes Compositores da musica ocidental");
+    strcpy(cartas[a].pergunta[3],"Dica 4: Compos a musica do carro do gas");
+    strcpy(cartas[a].pergunta[4],"Dica 5: Compos a famosa peca para piano 'Sonata ao Luar'");
+    strcpy(cartas[a].resposta,"beethoven");
+    
+    a++;    
+        
     strcpy(cartas[a].pergunta[0],"Dica 1: ");
     strcpy(cartas[a].pergunta[1],"Dica 2: ");
     strcpy(cartas[a].pergunta[2],"Dica 3: ");
@@ -111,7 +157,6 @@ void BancoDePerfis(PERFIL cartas[]) {
     strcpy(cartas[a].resposta,"");
     
     a++;
-    
     
 
     /*  Copia e Cola daqui
