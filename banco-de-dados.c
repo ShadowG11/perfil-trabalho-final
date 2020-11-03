@@ -149,6 +149,15 @@ void BancoDePerfis(PERFIL cartas[]) {
     
     a++;    
         
+    strcpy(cartas[a].pergunta[0],"Dica 1: Alcunhado 'o Magnamico'");
+    strcpy(cartas[a].pergunta[1],"Dica 2: Nascido em 1825");
+    strcpy(cartas[a].pergunta[2],"Dica 3: Imperador do Brasil");
+    strcpy(cartas[a].pergunta[3],"Dica 4: Recebeu um colegio como presente de aniversario");
+    strcpy(cartas[a].pergunta[4],"Dica 5: Ultimo Imperador Brasileiro");
+    strcpy(cartas[a].resposta,"pedro ii");
+    
+    a++;    
+        
     strcpy(cartas[a].pergunta[0],"Dica 1: ");
     strcpy(cartas[a].pergunta[1],"Dica 2: ");
     strcpy(cartas[a].pergunta[2],"Dica 3: ");
@@ -159,6 +168,7 @@ void BancoDePerfis(PERFIL cartas[]) {
     a++;
     
 
+    printf("%d", a);
     /*  Copia e Cola daqui
     
     strcpy(cartas[a].pergunta[0],"Dica 1: ");
