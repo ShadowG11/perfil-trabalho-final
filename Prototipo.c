@@ -114,24 +114,23 @@ int main(){
                 if (player[4].usavel == 1){
                     printf(" | J5: %d pontos", player[4].pontos);
                     if (player[5].usavel == 1){
-                        printf(" | J6: %d pontos\n", player[5].pontos);
+                        printf(" | J6: %d pontos", player[5].pontos);
                     }
                 }
             }
         }
         printf("\n\n");
         
+        /*CONFERE SE ACABOU O JOGO*/
+        if(player[j].pontos>=MAX){
+            break;
+        }
+
         controle=1;
         vez++;
         j = vez % jogadores;
         descontaVezes = 0;
         pergunta = 0;
-
-
-        if(player[j-1].pontos>=MAX){
-            break;
-        }
-
 
         if(j>jogadores){
             j=0;
@@ -153,7 +152,7 @@ void BancoDePerfis(PERFIL cartas[]) {
     strcpy(cartas[0].pergunta[0],"Dica 1: Navegador e explorador");
     strcpy(cartas[0].pergunta[1],"Dica 2: Nasceu em Portugal");
     strcpy(cartas[0].pergunta[2],"Dica 3: Descobriu o Brasil");
-    strcpy(cartas[0].pergunta[3],"Dica 4: Mesmo nome de um imperador do Brasil");
+    strcpy(cartas[0].pergunta[3],"Dica 4: Mesmo primeiro nome de um imperador do Brasil");
     strcpy(cartas[0].pergunta[4],"Dica 5: ");
     strcpy(cartas[0].resposta,"pedro alvares cabral");
 
@@ -262,7 +261,7 @@ void BancoDePerfis(PERFIL cartas[]) {
     strcpy(cartas[13].pergunta[1],"Dica 2: Nasceu em 1856");
     strcpy(cartas[13].pergunta[2],"Dica 3: revolucionou o campo do eletromagnetismo");
     strcpy(cartas[13].pergunta[3],"Dica 4: Criou um tipo de turbina que leva o seu nome");
-    strcpy(cartas[13].pergunta[4],"Dica 5: 'ta in shockkk??'");
+    strcpy(cartas[13].pergunta[4],"Dica 5: 'ta in shockkk?'");
     strcpy(cartas[13].resposta,"nikola tesla");
    
         
