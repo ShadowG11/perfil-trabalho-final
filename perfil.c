@@ -33,7 +33,7 @@ int main(){
     JOGADOR player[MAXPLAYERS];
     PERFIL cartas[MAXPERFIS];
     PERFIL temp;
-    char resposta[30];  /*acredito, atualmente, que 50 seja suficiente*/
+    char resposta[30];  /*acredito, atualmente, que 30 seja suficiente*/
     srand(time(0));
 
     BancoDePerfis(cartas);
