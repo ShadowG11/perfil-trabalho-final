@@ -7,12 +7,12 @@
 #define TENTATIVAS 6
 
 typedef struct _JOGADOR{
-    int pontos = 0;
+    int pontos;
     int usavel;
 } JOGADOR;
 
 typedef struct _PERFIL{
-    char pergunta[5][60];
+    char pergunta[5][70];
     char resposta[30];
 } PERFIL;
 
@@ -83,7 +83,6 @@ int main(){
                 player[j].pontos += (5 - descontaVezes);
 
                 //corrigindo o vetor de cartas para o perfil "i" sair deste
-
                 cartasUsadas++;
                 for(k=i;k<(MAXPERFIS-cartasUsadas); k++){
                     temp = cartas[k];
@@ -117,13 +116,13 @@ int main(){
         vez++;
         j = vez % jogadores;
         
-        if(jogador[j-1].pontos>=MAX){
+        if(player[j-1].pontos>=MAX){
             break;
         }
     }
 
     for(i=0;i<jogadores;i++){
-        if(jogador[i].pontos>=MAX){
+        if(player[i].pontos>=MAX){
             printf("Parabens jogador %d, voce ganhou o jogo!\n", (i+1));
         }
     }
@@ -187,7 +186,7 @@ void BancoDePerfis(PERFIL cartas[]) {
     strcpy(cartas[a].pergunta[4],"Dica 5: Primeiro presidente negro dos EUA");
     strcpy(cartas[a].resposta,"barack obama");
     
-    a+;
+    a++;
 
     strcpy(cartas[a].pergunta[0],"Dica 1: Profeta do Islamismo");
     strcpy(cartas[a].pergunta[1],"Dica 2: Nascido em Nazare");
@@ -260,7 +259,7 @@ void BancoDePerfis(PERFIL cartas[]) {
     strcpy(cartas[a].pergunta[1],"Dica 2: Nasceu em 1856");
     strcpy(cartas[a].pergunta[2],"Dica 3: revolucionou o campo do eletromagnetismo");
     strcpy(cartas[a].pergunta[3],"Dica 4: Criou um tipo de turbina que leva o seu nome");
-    strcpy(cartas[a].pergunta[4],"Dica 5: 'ta in shockkk??'");
+    strcpy(cartas[a].pergunta[4],"Dica 5: 'ta in shockkk?'");
     strcpy(cartas[a].resposta,"nikola tesla");
     
     a++;    
@@ -290,19 +289,9 @@ void BancoDePerfis(PERFIL cartas[]) {
     strcpy(cartas[a].pergunta[4],"Dica 5: Ultimo Imperador Brasileiro");
     strcpy(cartas[a].resposta,"pedro ii");
     
-    a++;    
-        
-    strcpy(cartas[a].pergunta[0],"Dica 1: ");
-    strcpy(cartas[a].pergunta[1],"Dica 2: ");
-    strcpy(cartas[a].pergunta[2],"Dica 3: ");
-    strcpy(cartas[a].pergunta[3],"Dica 4: ");
-    strcpy(cartas[a].pergunta[4],"Dica 5: ");
-    strcpy(cartas[a].resposta,"");
-    
     a++;
-    
 
-    printf("%d", a);
+    printf("%d cartas\n", a);
     
     /*  Copia e Cola daqui
     
