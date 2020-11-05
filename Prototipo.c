@@ -28,22 +28,25 @@ cada ponto é equivalente ao numero de casas andadas.
 
 int main(){
 
-    printf("Bem vindo ao jogo PERFIL!\n");
 
-    int i, j = 0, k, tamanhoMaxPerfil;
+    int i;
+    int j = 0;
+    int k;
     unsigned int jogadores, descontaVezes = 0, vez = 0, cartasUsadas = 0, controle = 1, pergunta=0;
     JOGADOR player[MAXPLAYERS];
     PERFIL cartas[MAXPERFIS];
     PERFIL temp;
-    char resposta[50];  /*acredito, atualmente, que 50 seja suficiente*/
+    char resposta[30];  /*acredito, atualmente, que 50 seja suficiente*/
     srand(time(0));
 
     BancoDePerfis(cartas);
 
+    printf("Bem vindo ao jogo PERFIL!\n");
+
     /*CAPTANDO A QUANTIDADE DE JOGADORES*/
     while(jogadores<2 || jogadores>6) {
         printf("Insira a quantidade de jogadores (2-6): ");
-        scanf("%d", &jogadores);
+        scanf("%ud", &jogadores);
         if(jogadores<2){
             printf("Voce nao pode jogar com menos de duas pessoas!\n");
         }
