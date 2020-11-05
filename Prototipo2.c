@@ -117,7 +117,7 @@ int main(){
         j = vez % jogadores;
 
         if(j>jogadores){
-            jogadores=0;
+            j=0;
         }
         
         if(player[j-1].pontos>=MAX){
