@@ -1,0 +1,20 @@
+Relatório sobre a programação do jogo “Perfil”
+PLE 2020
+Integrantes: João Víctor Ferreira e Gerson Fernandes Manso Filho
+
+Parte 1: Objetivos
+	Primeiramente, os objetivos deste projeto eram, simploriamente, replicar o jogo de tabuleiro “Perfil” em uma interface virtual utilizando a linguagem de programação C. 
+	Para alcança reste objetivo, a questão principal foi desmembrada em diversas partes, onde cada uma pode ser vista individualmente dentro do código.
+
+Parte 2: Premissas
+	Para este simulador, foram considerados os fatores: pontuação, incluindo a variação de pontuação ganhada de acordo com o número de “dicas” usadas; quantidade de jogadores; Aleatoriedade do banco de dados; e as opções de “dica” ou “pular” no momento de resposta para cada “perfil”.
+
+Parte 3: Regras
+	No início do projeto foram estabelecidas as regras que o jogador deveria seguir, para nos guiar na hora de escrever o código. Os jogadores devem, portanto, seguir uma lista estrita de regras, sendo elas: Inicialmente, se deve inserir a quantidade de jogadores, sendo obrigatoriamente um número entre 2 e 6, que são as quantidades suportadas pelo código; Responder, em sua vez, a resposta que o jogador julga ser mais coerente com o perfil apresentado, em letras MINUSCULAS e SEM CARACTERES ESPECIAIS, ou, caso assim deseje, escrever “dica” para receber mais uma dica (caso ainda não tenha recebido as 5 que cada perfil possui), ou “pular”, caso o usuário não consiga adivinhar o perfil apresentado.
+	O primeiro, e apenas este, jogador a chegar à pontuação máxima de 20 pontos vence o jogo, encerrando assim o código.
+
+Parte 4:  Saída de execução
+	O código escrito, após receber o valor da quantidade de jogadores, aleatoriza, por meio da função rand (da biblioteca stdio.h), um perfil do banco de dados, componente do próprio código, para o primeiro jogador. Após isto, o jogador recebe a opção de inserir no programa uma string, que será comparada com alguns padrões: se for “dica”, o programa aumenta o vetor “pergunta”, apresentando, então, a dica seguinte no vetor, até um total de 5 dicas (após isso o programa imprime “Voce já atingiu o máximo de dicas”); se for “pular”, o programa não atribui ponto algum para o jogador atual e passa a vez de jogada para o próximo jogador; se for a resposta correta, ao jogador é atribuído um número de pontos (5 – o número de dicas usadas); se não for nenhuma das opções anteriores, o jogador só recebe a impressão “resposta errada!”, e tem a opção de responder de novo, até acertar, pular ou dica; ao final de cada ciclo (que divide a “vez” de cada jogador), o programa compara a pontuação do jogador atual com o máximo de pontos. Se o jogador tiver mais do que 20 pontos (atualmente sendo o máximo de pontos) o próximo ciclo não começa, uma lista de pontos é exibida e a mensagem “parabéns jogador N, você ganhou!” é exibida.
+
+Parte 5: Ferramentas Aprendidas Utilizadas
+	Para este código foi usado o conceito de Estrutura (junto com o comando typedef) para definir tanto os jogadores quanto os próprios perfis; foi usado o conceito de função para a criação do banco de dados e foi profundamente usado o conceito de vetores, para possibilitar a fluidez do banco de dados e das dicas, e a aleatoriedade dos perfis recebidos. Foi, também, amplamente utilizado o conceito de “strings” e funções da biblioteca string.h, já que o jogo trabalha, o tempo todo, com frases e respostas em palavras; Foi utilizado a biblioteca time.h e a função “rand” para aleatorizar a atribuição dos perfis; e, por final, diversos loops de “for” foram usados, para evitar a possibilidade de loop infinito, ao longo do código inteiro.
