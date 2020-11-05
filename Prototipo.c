@@ -138,11 +138,7 @@ int main(){
 
     }
 
-    for(i=0;i<jogadores;i++){
-        if(player[i].pontos>=MAX){
-            printf("Parabens jogador %d, voce ganhou o jogo!\n", (i+1));
-        }
-    }
+    printf("Parabens jogador %d, voce ganhou o jogo!\n", (j+1));
 
     return 0;
 }
@@ -185,7 +181,7 @@ void BancoDePerfis(PERFIL cartas[]) {
     strcpy(cartas[4].pergunta[1],"Dica 2: Nasceu em 1743");
     strcpy(cartas[4].pergunta[2],"Dica 3: Autodidata");
     strcpy(cartas[4].pergunta[3],"Dica 4: Criou a Mecanica Classica");
-    strcpy(cartas[4].pergunta[4],"Dica 5: Uma maca caiu em sua4 cabeca");
+    strcpy(cartas[4].pergunta[4],"Dica 5: Uma maca caiu em sua cabeca");
     strcpy(cartas[4].resposta,"isaac newton");
 
 
