@@ -47,6 +47,7 @@ int main(){
     while(jogadores<2 || jogadores>6) {
         printf("Insira a quantidade de jogadores (2-6): ");
         scanf("%ud", &jogadores);
+        fflush(stdin);
         if(jogadores<2){
             printf("Voce nao pode jogar com menos de duas pessoas!\n");
         }
@@ -68,9 +69,7 @@ int main(){
         /*CRIANDO SISTEMA DE PERGUNTAS (eu deveria fazer um maximo de tentativas, ou o jogador fica respondendo até acertar?)*/
         while(controle){
             puts(cartas[i].pergunta[pergunta]);
-            fflush(stdin);
             gets(resposta);
-            fflush(stdin);
 
             /*Checa que pediu dica*/
             if(strcmp(resposta, "dica") == 0){
