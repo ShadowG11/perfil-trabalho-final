@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#define MAX 20  //Maximo de pontos, 20 devido ao tamanho do Banco de Dados
+#define MAX 20  /*Maximo de pontos, 20 devido ao tamanho do Banco de Dados*/
 #define MAXPLAYERS 6
-#define MAXPERFIS 17 //sujeito a mudança, atualmente existem 17 perfis no DB
+#define MAXPERFIS 17 /*sujeito a mudança, atualmente existem 17 perfis no DB*/
 #define TENTATIVAS 6
 
 typedef struct _JOGADOR{
@@ -35,12 +35,12 @@ int main(){
     JOGADOR player[MAXPLAYERS];
     PERFIL cartas[MAXPERFIS];
     PERFIL temp;
-    char resposta[50];  //acredito, atualmente, que 50 seja suficiente 
+    char resposta[50];  /*acredito, atualmente, que 50 seja suficiente*/
     srand(time(0));
 
     BancoDePerfis(cartas);
 
-    //CAPTANDO A QUANTIDADE DE JOGADORES
+    /*CAPTANDO A QUANTIDADE DE JOGADORES*/
     while(jogadores<2 || jogadores>6) {
         printf("Insira a quantidade de jogadores (2-6): ");
         scanf("%d", &jogadores);
@@ -52,17 +52,17 @@ int main(){
         }
     }
 
-    //ATRIBUINDO A QUANTIDADE DE JOGADORES AO PROGRAMA
+    /*ATRIBUINDO A QUANTIDADE DE JOGADORES AO PROGRAMA*/
     for(i=0;i<jogadores;i++){
         player[i].pontos=0;
         player[i].usavel=1;
     }
 
-    //CRIANDO O SISTEMA DE CADA "ROUND", ATE O FINAL DO JOGO 
+    /*CRIANDO O SISTEMA DE CADA "ROUND", ATE O FINAL DO JOGO*/
     while(player[j].pontos<MAX){
         printf("Jogador %d, responda:\n", j+1);
         i = rand() % (MAXPERFIS-cartasUsadas); /*ALEATORIZA A CARTA*/
-        //CRIANDO SISTEMA DE PERGUNTAS (eu deveria fazer um maximo de tentativas, ou o jogador fica respondendo até acertar?)
+        /*CRIANDO SISTEMA DE PERGUNTAS (eu deveria fazer um maximo de tentativas, ou o jogador fica respondendo até acertar?)*/
         while(controle){
             puts(cartas[i].pergunta[pergunta]);
             fflush(stdin);
@@ -85,12 +85,12 @@ int main(){
                 controle = 0;
             }
 
-            //Se ele acertar: printa (acertou), atribui os pontos ao jogador, corrige o vetor de PERFIS, retorna o controle pra 0 para mudar de round, o que mais?
+            /*Se ele acertar: printa (acertou), atribui os pontos ao jogador, corrige o vetor de PERFIS, retorna o controle pra 0 para mudar de round, o que mais?*/
             else if(strcmp(resposta, cartas[i].resposta) == 0){
                 printf("Parabens, voce acertou!\n\n");
                 player[j].pontos += (5 - descontaVezes);
 
-                //corrigindo o vetor de cartas para o perfil "i" sair deste
+                /*corrigindo o vetor de cartas para o perfil "i" sair deste*/
                 cartasUsadas++;
                 for(k=i;k<(MAXPERFIS-cartasUsadas); k++){
                     temp = cartas[k];
