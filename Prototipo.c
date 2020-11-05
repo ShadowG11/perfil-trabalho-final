@@ -22,13 +22,11 @@ void BancoDePerfis(PERFIL cartas[]);
 /*
    Primeiro a gente tem q criar um banco de dados com os perfis e as perguntas que a gente quer, depois fazer um sistema onde, na sua vez, cada jogador recebe um "perfil" aleatorio
 do banco de dados. Ali ele tem a opçao de pedir uma dica (qnd o gets captar "dica") ou dar um palpite. se o palpite for igual ao "char resposta" do perfil analisado, ele ganha n pontos
-(6-o numero de dicas usadas). Após isso, o próximo jogador recebe um outro perfil, com "jaUsado" = 0, e repete o mesmo procedimento. O primeiro jogador a conseguir 140 pontos vence, pois
+(5-o numero de dicas usadas). Após isso, o próximo jogador recebe um outro perfil, com "jaUsado" = 0, e repete o mesmo procedimento. O primeiro jogador a conseguir 20 pontos vence, pois
 cada ponto é equivalente ao numero de casas andadas.
 */
 
 int main(){
-
-
     int i;
     int j = 0;
     int k;
@@ -66,12 +64,13 @@ int main(){
     while(player[j].pontos<MAX){
         printf("Jogador %d, responda:\n", j+1);
         i = rand() % (MAXPERFIS-cartasUsadas); /*ALEATORIZA A CARTA*/
-        /*CRIANDO SISTEMA DE PERGUNTAS (eu deveria fazer um maximo de tentativas, ou o jogador fica respondendo até acertar?)*/
+
+        /*SISTEMA DE PERGUNTAS*/
         while(controle){
             puts(cartas[i].pergunta[pergunta]);
             gets(resposta);
 
-            /*Checa que pediu dica*/
+            /*Checa se pediu dica*/
             if(strcmp(resposta, "dica") == 0){
                 if(descontaVezes==4){
                     printf("Voce ja atingiu o maximo de dicas!\n");
@@ -82,12 +81,13 @@ int main(){
                 }
             }
 
+            /*Checa se pulou*/
             else if(strcmp(resposta, "pular") == 0){
                 printf("Resposta pulada!\n");
                 controle = 0;
             }
 
-            /*Se ele acertar: printa (acertou), atribui os pontos ao jogador, corrige o vetor de PERFIS, retorna o controle pra 0 para mudar de round, o que mais?*/
+            /*Se ele acertar: printa (acertou), atribui os pontos ao jogador, corrige o vetor de PERFIS, retorna o controle pra 0 para mudar de round*/
             else if(strcmp(resposta, cartas[i].resposta) == 0){
                 printf("Parabens, voce acertou!\n\n");
                 player[j].pontos += (5 - descontaVezes);
