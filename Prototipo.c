@@ -5,7 +5,6 @@
 #define MAX 20  /*Maximo de pontos, 20 devido ao tamanho do Banco de Dados*/
 #define MAXPLAYERS 6
 #define MAXPERFIS 17 /*sujeito a mudança, atualmente existem 17 perfis no DB*/
-#define TENTATIVAS 6
 
 typedef struct _JOGADOR{
     int pontos;
