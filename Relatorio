@@ -1,10 +1,10 @@
 Relatório sobre a programação do jogo “Perfil”
-PLE 2020
+PLE 2020 - Trabalho Final
 Integrantes: João Víctor Ferreira e Gerson Fernandes Manso Filho
 
 Parte 1: Objetivos
 	Primeiramente, os objetivos deste projeto eram, simploriamente, replicar o jogo de tabuleiro “Perfil” em uma interface virtual utilizando a linguagem de programação C. 
-	Para alcança reste objetivo, a questão principal foi desmembrada em diversas partes, onde cada uma pode ser vista individualmente dentro do código.
+	Para alcançar este objetivo, a questão principal foi desmembrada em diversas partes, onde cada uma pode ser vista individualmente dentro do código.
 
 Parte 2: Premissas
 	Para este simulador, foram considerados os fatores: pontuação, incluindo a variação de pontuação ganhada de acordo com o número de “dicas” usadas; quantidade de jogadores; Aleatoriedade do banco de dados; e as opções de “dica” ou “pular” no momento de resposta para cada “perfil”.
