@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#define MAX 20  /*Maximo de pontos, 20 devido ao tamanho do Banco de Dados*/
+#define MAXPONTOS 20  /*Maximo de pontos, 20 devido ao tamanho do Banco de Dados*/
 #define MAXPLAYERS 6
 #define MAXPERFIS 17 /*sujeito a mudança, atualmente existem 17 perfis no DB*/
 
@@ -60,7 +60,7 @@ int main(){
     }
 
     /*CRIANDO O SISTEMA DE CADA "ROUND", ATE O FINAL DO JOGO*/
-    while(player[j].pontos<MAX){
+    while(player[j].pontos<MAXPONTOS){
         printf("Jogador %d, responda:\n", j+1);
         i = rand() % (MAXPERFIS-cartasUsadas); /*ALEATORIZA A CARTA*/
 
@@ -123,7 +123,7 @@ int main(){
         printf("\n\n");
         
         /*CONFERE SE ACABOU O JOGO*/
-        if(player[j].pontos>=MAX){
+        if(player[j].pontos>=MAXPONTOS){
             break;
         }
 
