@@ -141,10 +141,10 @@ int main(){
 
 void BancoDePerfis(PERFIL cartas[]) {
     strcpy(cartas[0].pergunta[0],"Dica 1: Navegador e explorador");
-    strcpy(cartas[0].pergunta[1],"Dica 2: Nasceu em Portugal");
-    strcpy(cartas[0].pergunta[2],"Dica 3: Descobriu o Brasil");
+    strcpy(cartas[0].pergunta[1],"Dica 2: Nascido em 1467");
+    strcpy(cartas[0].pergunta[2],"Dica 3: Nasceu em Portugal");
     strcpy(cartas[0].pergunta[3],"Dica 4: Mesmo primeiro nome de um imperador do Brasil");
-    strcpy(cartas[0].pergunta[4],"Dica 5: ");
+    strcpy(cartas[0].pergunta[4],"Dica 5: Descobriu o Brasil");
     strcpy(cartas[0].resposta,"pedro alvares cabral");
 
 
@@ -193,7 +193,7 @@ void BancoDePerfis(PERFIL cartas[]) {
     strcpy(cartas[6].pergunta[2],"Dica 3: Nasceu em uma mangedoura");
     strcpy(cartas[6].pergunta[3],"Dica 4: Transformou agua em vinho");
     strcpy(cartas[6].pergunta[4],"Dica 5: Foi crucificado");
-    strcpy(cartas[6].resposta,"jesus");
+    strcpy(cartas[6].resposta,"jesus cristo");
 
 
     strcpy(cartas[7].pergunta[0],"Dica 1: Navegador Italiano");
@@ -250,16 +250,16 @@ void BancoDePerfis(PERFIL cartas[]) {
         
     strcpy(cartas[13].pergunta[0],"Dica 1: Grande inventor mecanico e cientista eletrotecnico");
     strcpy(cartas[13].pergunta[1],"Dica 2: Nasceu em 1856");
-    strcpy(cartas[13].pergunta[2],"Dica 3: revolucionou o campo do eletromagnetismo");
+    strcpy(cartas[13].pergunta[2],"Dica 3: Revolucionou o campo do eletromagnetismo");
     strcpy(cartas[13].pergunta[3],"Dica 4: Criou um tipo de turbina que leva o seu nome");
     strcpy(cartas[13].pergunta[4],"Dica 5: 'ta in shockkk?'");
     strcpy(cartas[13].resposta,"nikola tesla");
    
         
     strcpy(cartas[14].pergunta[0],"Dica 1: Politico Alemao");
-    strcpy(cartas[14].pergunta[1],"Dica 2: nasceu em 1889, na austria");
+    strcpy(cartas[14].pergunta[1],"Dica 2: Nasceu em 1889, na austria");
     strcpy(cartas[14].pergunta[2],"Dica 3: Queria ser artista");
-    strcpy(cartas[14].pergunta[3],"Dica 4: principal instigador da Segunda Guerra Mundial");
+    strcpy(cartas[14].pergunta[3],"Dica 4: Principal instigador da Segunda Guerra Mundial");
     strcpy(cartas[14].pergunta[4],"Dica 5: Principal figura do Partido Nazista");
     strcpy(cartas[14].resposta,"adolf hitler");
    
