@@ -1,9 +1,13 @@
-# Jogo Perfil
-Jogo feito em C para o trabalho final de Computação 1.
+# Trabalho de Comp 1 2020-PLE - Perfil
+Jogo Perfil feito em C para o trabalho final de Computação 1.
 
-## Instruções de compilação:
+## Compilação:
 
-**{A INSERIR}**
+O jogo foi testado e compilado normalmente com o GCC para Windows.
+
+O código do jogo em si é o **perfil.c** e já é disponibilizado o **perfil.exe** para não precisar compilar.
+
+Os outros arquivos são rascunhos e pequenas mudanças que foram feitas para testes. Não quisemos excluir para não perdermos o histórico de alterações dos arquivos.
 
 ## Instruções do jogo:
 
@@ -13,7 +17,7 @@ Jogo feito em C para o trabalho final de Computação 1.
 
 * Insira a resposta em **letras minúsculas** e **sem caracteres especiais** (sem usar "ç", "ã", "ó" etc).
 
-* O primeiro jogador a chegar aos {INSERIR PONTUAÇÃO MÁXIMA AQUI}, vence!
+* O primeiro jogador a chegar aos 20 pontos vence!
 
 
 ## Criadores:
