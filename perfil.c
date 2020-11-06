@@ -28,7 +28,6 @@ cada ponto é equivalente ao numero de casas andadas.
 int main(){
     int i;
     int j = 0;
-    int k;
     unsigned int jogadores, descontaVezes = 0, vez = 0, cartasUsadas = 0, controle = 1, pergunta=0;
     JOGADOR player[MAXPLAYERS];
     PERFIL cartas[MAXPERFIS];
@@ -93,10 +92,10 @@ int main(){
 
                 /*corrigindo o vetor de cartas para o perfil "i" sair deste*/
                 cartasUsadas++;
-                for(k=i;k<(MAXPERFIS-cartasUsadas); k++){
-                    temp = cartas[k];
-                    cartas[k]=cartas[k+1];
-                    cartas[k+1]=temp;
+                for(;i<(MAXPERFIS-cartasUsadas); i++){
+                    temp = cartas[i];
+                    cartas[i]=cartas[i+1];
+                    cartas[i+1]=temp;
                 }
                 controle=0;
             }
