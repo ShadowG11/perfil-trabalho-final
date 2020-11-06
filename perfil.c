@@ -81,7 +81,7 @@ int main(){
 
             /*Checa se pulou*/
             else if(strcmp(resposta, "pular") == 0){
-                printf("Resposta pulada!\n");
+                printf("Resposta pulada!\n\n");
                 controle = 0;
             }
 
