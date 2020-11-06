@@ -1,5 +1,5 @@
-# Jogo Perfil
-Jogo feito em C para o trabalho final de Computação 1.
+# Trabalho de Comp 1 2020-PLE - Perfil
+Jogo Perfil feito em C para o trabalho final de Computação 1.
 
 ## Compilação:
 
