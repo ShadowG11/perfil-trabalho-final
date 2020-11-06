@@ -28,7 +28,7 @@ cada ponto é equivalente ao numero de casas andadas.
 int main(){
     int i;
     int j = 0;
-    unsigned int jogadores, descontaVezes = 0, cartasUsadas = 0, controle = 1, pergunta=0;
+    unsigned int jogadores, descontaVezes = 0, vez = 0, cartasUsadas = 0, controle = 1, pergunta=0;
     JOGADOR player[MAXPLAYERS];
     PERFIL cartas[MAXPERFIS];
     PERFIL temp;
@@ -127,13 +127,10 @@ int main(){
         }
 
         controle=1;
-        j++;
+        vez++;
+        j = vez % jogadores;
         descontaVezes = 0;
         pergunta = 0;
-
-        if(j>=jogadores){
-            j=0;
-        }
     }
 
     printf("Parabens jogador %d, voce ganhou o jogo!\n", (j+1));
